@@ -1,0 +1,213 @@
+C:\Users\Ivanm\Desktop\HSE\project\TinyTuyaTest\venv\Scripts\python.exe C:\Users\Ivanm\Desktop\HSE\project\TinyTuyaTest\main.py 
+ > Send Request for Status < 
+ > Send Request for Status < 
+Initial Status: {'dps': {'26': 'middle', '30': True, '31': 5, '34': 63}}
+ > Begin Monitor Loop <
+ {'dps': {'1': 'AgAAAAIAAgEAACk='}, 't': 1710845759}
+ {'dps': {'1': 'Av8AAAIAAgAAACk='}, 't': 1710845762}
+ {'dps': {'26': 'middle'}, 't': 1710845763}
+ {'dps': {'30': True}, 't': 1710845763}
+ {'dps': {'31': 5}, 't': 1710845763}
+ {'dps': {'34': 63}, 't': 1710845763}
+ {'dps': {'35': 'AQAB'}, 't': 1710845763}
+ None
+ None
+ {'dps': {'4': 'AAAAAAIAAQEAAQIAAgEAAgIAAgE='}, 't': 1710845776}
+ {'dps': {'4': 'AQE='}, 't': 1710845776}
+ {'dps': {'2': 'AgAAAAIAAQH/'}, 't': 1710845780}
+ {'dps': {'2': 'AgAAAAIAAgH/'}, 't': 1710845784}
+ {'dps': {'26': 'middle'}, 't': 1710845784}
+ {'dps': {'30': True}, 't': 1710845784}
+ {'dps': {'31': 5}, 't': 1710845784}
+ {'dps': {'34': 63}, 't': 1710845785}
+ {'dps': {'35': 'AQAB'}, 't': 1710845785}
+ {'dps': {'1': 'AgAAAAIAAQEAACk='}, 't': 1710845789}
+ {'dps': {'1': 'Av8AAAIAAQAAACk='}, 't': 1710845790}
+ None
+ None
+ None
+ {'dps': {'26': 'middle'}, 't': 1710845806}
+ {'dps': {'30': True}, 't': 1710845806}
+ {'dps': {'31': 5}, 't': 1710845806}
+ {'dps': {'34': 63}, 't': 1710845806}
+ {'dps': {'35': 'AQAB'}, 't': 1710845806}
+ {'dps': {'4': 'AAAAAAIAAQEAAQIAAgE='}, 't': 1710845808}
+ {'dps': {'4': 'AQE='}, 't': 1710845808}
+ None
+ {'dps': {'2': 'AgAAAAIAAQH/'}, 't': 1710845813}
+ {'dps': {'1': 'AgAAAAIAAQEAAJc='}, 't': 1710845817}
+ {'dps': {'1': 'Av8AAAIAAQAAAJc='}, 't': 1710845818}
+ None
+ {'dps': {'26': 'middle'}, 't': 1710845828}
+ {'dps': {'30': True}, 't': 1710845828}
+ {'dps': {'31': 5}, 't': 1710845828}
+ {'dps': {'34': 63}, 't': 1710845828}
+ {'dps': {'35': 'AQAB'}, 't': 1710845828}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710845831}
+ None
+ None
+ None
+ {'dps': {'26': 'middle'}, 't': 1710845849}
+ {'dps': {'30': True}, 't': 1710845849}
+ {'dps': {'31': 5}, 't': 1710845849}
+ {'dps': {'34': 63}, 't': 1710845849}
+ {'dps': {'35': 'AQAB'}, 't': 1710845850}
+ {'dps': {'1': 'AgAAAAIAAgEAAJc='}, 't': 1710845850}
+ {'dps': {'1': 'Av8AAAIAAgAAAJc='}, 't': 1710845851}
+ {'dps': {'12': 'AAAAAgAA'}, 't': 1710845854}
+ None
+ {'dps': {'1': 'AgAAAAIAAwEAAJc='}, 't': 1710845859}
+ {'dps': {'1': 'Av8AAAIAAwAAAJc='}, 't': 1710845860}
+ None
+ {'dps': {'12': 'AAAAAwAA'}, 't': 1710845867}
+ {'dps': {'26': 'middle'}, 't': 1710845871}
+ {'dps': {'30': True}, 't': 1710845871}
+ {'dps': {'31': 5}, 't': 1710845871}
+ {'dps': {'34': 63}, 't': 1710845871}
+ {'dps': {'35': 'AQAB'}, 't': 1710845871}
+ {'dps': {'1': 'AgAAAAIABAEAAJc='}, 't': 1710845874}
+ {'dps': {'1': 'Av0AAAIABAACAJc='}, 't': 1710845875}
+ {'dps': {'12': 'AAAAAwAA'}, 't': 1710845877}
+ None
+ {'dps': {'1': 'AgAAAAIABAEAAJc='}, 't': 1710845884}
+ {'dps': {'1': 'Av0AAAIABAACAJc='}, 't': 1710845885}
+ {'dps': {'12': 'AAAAAwAA'}, 't': 1710845886}
+ None
+ {'dps': {'4': 'AAAAAAIAAQEAAQIAAgEAAgIAAgEAAwIAAgE='}, 't': 1710845891}
+ {'dps': {'4': 'AQE='}, 't': 1710845891}
+ {'dps': {'26': 'middle'}, 't': 1710845893}
+ {'dps': {'30': True}, 't': 1710845893}
+ {'dps': {'31': 5}, 't': 1710845893}
+ {'dps': {'34': 63}, 't': 1710845893}
+ {'dps': {'35': 'AQAB'}, 't': 1710845893}
+ {'dps': {'2': 'AgAAAAIAAwH/'}, 't': 1710845895}
+ None
+ {'dps': {'2': 'AgAAAAIAAgH/'}, 't': 1710845904}
+ {'dps': {'2': 'AgAAAAIAAwH/'}, 't': 1710845908}
+ {'dps': {'2': 'AgAAAAIAAQH/'}, 't': 1710845912}
+ {'dps': {'26': 'middle'}, 't': 1710845914}
+ {'dps': {'30': True}, 't': 1710845914}
+ {'dps': {'31': 5}, 't': 1710845914}
+ {'dps': {'34': 63}, 't': 1710845914}
+ {'dps': {'35': 'AQAB'}, 't': 1710845914}
+ {'dps': {'23': 'AgAA'}, 't': 1710845915}
+ {'dps': {'23': 'AgAA'}, 't': 1710845917}
+ {'dps': {'23': 'AgAA'}, 't': 1710845919}
+ {'dps': {'23': 'AgAA'}, 't': 1710845920}
+ {'dps': {'1': 'AgAAAAIAAQEAAJc='}, 't': 1710845925}
+ {'dps': {'1': 'Av8AAAIAAQAAAJc='}, 't': 1710845926}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710845929}
+ None
+ {'dps': {'26': 'middle'}, 't': 1710845936}
+ {'dps': {'30': True}, 't': 1710845936}
+ {'dps': {'31': 5}, 't': 1710845936}
+ {'dps': {'34': 63}, 't': 1710845936}
+ {'dps': {'35': 'AQAB'}, 't': 1710845936}
+ {'dps': {'4': 'AAAAAAIAAQEAAQIAAgE='}, 't': 1710845939}
+ {'dps': {'4': 'AQE='}, 't': 1710845939}
+ None
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710845944}
+ {'dps': {'23': 'AgAA'}, 't': 1710845949}
+ {'dps': {'23': 'AgAA'}, 't': 1710845951}
+ None
+ {'dps': {'1': 'AgAAAAIAAgEAAJc='}, 't': 1710845957}
+ {'dps': {'26': 'middle'}, 't': 1710845958}
+ {'dps': {'30': True}, 't': 1710845958}
+ {'dps': {'31': 5}, 't': 1710845958}
+ {'dps': {'34': 63}, 't': 1710845958}
+ {'dps': {'35': 'AQAB'}, 't': 1710845958}
+ {'dps': {'1': 'Av8AAAIAAgAAAJc='}, 't': 1710845958}
+ {'dps': {'12': 'AAAAAgAA'}, 't': 1710845961}
+ {'dps': {'1': 'AgAAAAIAAwEAAJc='}, 't': 1710845964}
+ {'dps': {'1': 'Av8AAAIAAwAAAJc='}, 't': 1710845966}
+ {'dps': {'12': 'AAAAAwAA'}, 't': 1710845968}
+ None
+ {'dps': {'1': 'AgAAAAIABAEAAJc='}, 't': 1710845973}
+ {'dps': {'1': 'Av0AAAIABAACAJc='}, 't': 1710845975}
+ {'dps': {'12': 'AAAAAwAA'}, 't': 1710845977}
+ {'dps': {'26': 'middle'}, 't': 1710845979}
+ {'dps': {'30': True}, 't': 1710845979}
+ {'dps': {'31': 5}, 't': 1710845979}
+ {'dps': {'34': 63}, 't': 1710845979}
+ {'dps': {'35': 'AQAB'}, 't': 1710845979}
+ {'dps': {'12': 'AAAAAwAA'}, 't': 1710845983}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710845987}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710845987}
+ None
+ None
+ {'dps': {'26': 'middle'}, 't': 1710846001}
+ {'dps': {'30': True}, 't': 1710846001}
+ {'dps': {'31': 5}, 't': 1710846001}
+ {'dps': {'34': 63}, 't': 1710846001}
+ {'dps': {'35': 'AQAB'}, 't': 1710846001}
+ {'dps': {'4': 'AAAAAAIAAQEAAQIAAgEAAgIAAgEAAwIAAgE='}, 't': 1710846006}
+ {'dps': {'4': 'AQE='}, 't': 1710846006}
+ {'dps': {'2': 'AgAAAAIAAQH/'}, 't': 1710846010}
+ {'dps': {'2': 'AgAAAAIAAgH/'}, 't': 1710846013}
+ {'dps': {'2': 'AgAAAAIAAwH/'}, 't': 1710846016}
+ {'dps': {'23': 'AgAA'}, 't': 1710846020}
+ {'dps': {'23': 'AgAA'}, 't': 1710846021}
+ {'dps': {'26': 'middle'}, 't': 1710846022}
+ {'dps': {'30': True}, 't': 1710846022}
+ {'dps': {'31': 5}, 't': 1710846023}
+ {'dps': {'34': 63}, 't': 1710846023}
+ {'dps': {'35': 'AQAB'}, 't': 1710846023}
+ {'dps': {'23': 'AgAA'}, 't': 1710846023}
+ {'dps': {'23': 'AgAA'}, 't': 1710846024}
+ None
+ {'dps': {'1': 'AgAAAAIAAQEAAJc='}, 't': 1710846029}
+ {'dps': {'1': 'Av8AAAIAAQAAAJc='}, 't': 1710846030}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710846033}
+ None
+ {'dps': {'1': 'AgAAAAIAAgEAAJc='}, 't': 1710846039}
+ {'dps': {'1': 'Av0AAAIAAgACAJc='}, 't': 1710846041}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710846043}
+ {'dps': {'26': 'middle'}, 't': 1710846044}
+ {'dps': {'30': True}, 't': 1710846044}
+ {'dps': {'31': 5}, 't': 1710846044}
+ {'dps': {'34': 63}, 't': 1710846044}
+ {'dps': {'35': 'AQAB'}, 't': 1710846044}
+ None
+ {'dps': {'4': 'AAAAAAIAAQEAAQIAAgE='}, 't': 1710846051}
+ {'dps': {'4': 'AQE='}, 't': 1710846051}
+ None
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710846059}
+ None
+ {'dps': {'26': 'middle'}, 't': 1710846066}
+ {'dps': {'30': True}, 't': 1710846066}
+ {'dps': {'31': 5}, 't': 1710846066}
+ {'dps': {'34': 63}, 't': 1710846066}
+ {'dps': {'35': 'AQAB'}, 't': 1710846066}
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710846068}
+ None
+ None
+ None
+ {'dps': {'26': 'middle'}, 't': 1710846087}
+ {'dps': {'30': True}, 't': 1710846087}
+ {'dps': {'31': 5}, 't': 1710846087}
+ {'dps': {'34': 63}, 't': 1710846087}
+ {'dps': {'35': 'AQAB'}, 't': 1710846088}
+ None
+ None
+ None
+ None
+ {'dps': {'26': 'middle'}, 't': 1710846109}
+ {'dps': {'30': True}, 't': 1710846109}
+ {'dps': {'31': 5}, 't': 1710846109}
+ {'dps': {'34': 63}, 't': 1710846109}
+ {'dps': {'35': 'AQAB'}, 't': 1710846109}
+ None
+ None
+ None
+ {'dps': {'12': 'AAAAAQAA'}, 't': 1710846125}
+ None
+ {'dps': {'26': 'middle'}, 't': 1710846131}
+ {'dps': {'30': True}, 't': 1710846131}
+ {'dps': {'31': 5}, 't': 1710846131}
+ {'dps': {'34': 63}, 't': 1710846131}
+ {'dps': {'35': 'AQAB'}, 't': 1710846131}
+ {'dps': {'1': 'AgAAAAIAAgEAAJc='}, 't': 1710846131}
+ {'dps': {'1': 'Av8AAAIAAgAAAJc='}, 't': 1710846132}
+ {'dps': {'1': 'AgAAAAIAAwEAAJc='}, 't': 1710846134}
+ {'dps': {'1': 'Av8AAAIAAwAAAJc='}, 't': 1710846135}
+ None
