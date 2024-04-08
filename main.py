@@ -28,6 +28,13 @@ d = tinytuya.OutletDevice('bf45653c868eec068bawzu', '192.168.10.10', '*BVvpBw1JT
 d.set_version(3.3)
 
 
+def generate_delete_payload(user_number):
+    user_number = user_number-4
+    list = ['A', 'Q', 'g', 'w']
+    start = ord('a')
+    res = chr(start + (user_number // 4)) + list[user_number % 4]
+
+
 def get_start_menu_markup():
     reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn = types.KeyboardButton("Настроить доступ к комнате")
