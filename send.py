@@ -11,6 +11,6 @@ d.set_version(3.3)
 # payload=d.generate_payload(tinytuya.CONTROL, data={'1': True, '2': 50}, gwId=DEVICEID, devId=DEVICEID, uid=DEVICEID)
 
 # Send the payload to the device
-payload=d.generate_payload(tinytuya.CONTROL, {'2': 'AgAAAAMAdgH/'})
+payload=d.generate_payload(tinytuya.CONTROL, {'1': 'AwAAAAMAAAMAAAE='})
 print(payload)
 d._send_receive(payload)
