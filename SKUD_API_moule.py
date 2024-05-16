@@ -25,6 +25,7 @@ def get_user_access_by_email(email, lock_id):
 
     r = requests.get(f"http://172.18.198.34:8000/api/v1/accesses?u_id={u_id}&lock={lock_id}", headers=headers)
     accesses = r.json()['results']
+    print(accesses)
     for access in accesses:
         access_start = datetime.fromisoformat(access['access_start'])
         access_stop = datetime.fromisoformat(access['access_stop'])
@@ -36,5 +37,5 @@ def get_user_access_by_email(email, lock_id):
     return False
 
 
-email = 'dabrameshin@miem.hse.ru'
-print(get_user_access_by_email(email, 5))
+# email = 'dabrameshin@miem.hse.ru'
+# print(get_user_access_by_email(email, 1))

@@ -3,11 +3,12 @@ import tinytuya
 
 
 class Lock:
-    def __init__(self, room, device_id, address, local_key):
+    def __init__(self, room, room_id, device_id, address, local_key):
         self.room = room
         self.device_id = device_id
         self.address = address
         self.local_key = local_key
+        self.room_id = room_id
         self.users = {}
         self.d = tinytuya.OutletDevice(self.device_id,
                                        self.address,
@@ -47,6 +48,9 @@ class Lock:
 
     def get_user(self, user):
         return self.users[str(user)]
+
+    def delete_user(self, user):
+        del self.users[str(user)]
 
     def add_card(self, user):
         payload = self.d.generate_payload(tinytuya.CONTROL, {'1': 'AgAAAAMAZAEAAAE='})
