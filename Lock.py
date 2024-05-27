@@ -50,6 +50,8 @@ class Lock:
         return self.users[str(user)]
 
     def delete_user(self, user):
+        self.delete_card(user)
+        self.delete_fingerprint(user)
         del self.users[str(user)]
 
     def add_card(self, user):
@@ -62,16 +64,18 @@ class Lock:
         return False
 
     def delete_fingerprint(self, user):
-        payload = self.d.generate_payload(tinytuya.CONTROL,
-                                          {'2': f'AwAAAAMA{self.users[str(user)]["fingerprint"]}H/'})
-        self.d._send_receive(payload)
-        del self.users[str(user)]['fingerprint']
+        if "fingerprint" in self.users[str(user)]:
+            payload = self.d.generate_payload(tinytuya.CONTROL,
+                                              {'2': f'AwAAAAMA{self.users[str(user)]["fingerprint"]}H/'})
+            self.d._send_receive(payload)
+            del self.users[str(user)]['fingerprint']
 
     def delete_card(self, user):
-        payload = self.d.generate_payload(tinytuya.CONTROL,
-                                          {'2': f'AgAAAAMA{self.users[str(user)]["card"]}H/'})
-        self.d._send_receive(payload)
-        del self.users[str(user)]['card']
+        if "card" in self.users[str(user)].keys():
+            payload = self.d.generate_payload(tinytuya.CONTROL,
+                                              {'2': f'AgAAAAMA{self.users[str(user)]["card"]}H/'})
+            self.d._send_receive(payload)
+            del self.users[str(user)]['card']
 
     def get_users(self):
         return self.users
