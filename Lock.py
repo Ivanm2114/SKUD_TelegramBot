@@ -28,7 +28,7 @@ class Lock:
         self.users[str(user_id)] = {}
 
     def add_fingerprint(self, user):
-        payload = self.d.generate_payload(tinytuya.CONTROL, {'1': 'AwAAAAMAAAMAAAE='})
+        payload = self.d.generate_payload(tinytuya.CONTROL, {'1': 'AwABAAEAAAMAAAE='})
         self.d._send_receive(payload)
         counter = 0
         while counter < 3:
@@ -55,7 +55,7 @@ class Lock:
         del self.users[str(user)]
 
     def add_card(self, user):
-        payload = self.d.generate_payload(tinytuya.CONTROL, {'1': 'AgAAAAMAZAEAAAE='})
+        payload = self.d.generate_payload(tinytuya.CONTROL, {'1': 'AgABAAEAZAEAAAE='})
         self.d._send_receive(payload)
         data = self.d.receive()
         if 'Av8' in data['dps']['1']:

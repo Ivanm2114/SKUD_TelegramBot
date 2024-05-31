@@ -13,8 +13,7 @@ import json
 
 locks = {
     '505': Lock('505', 6, 'bfc2362c23fa6fe8a32qxv',
-                '192.168.137.202', "?mcc<FabE]py;ViN")}
-cur_lock = ''
+                '192.168.137.68', "?mcc<FabE]py;ViN")}
 
 load_dotenv()
 
@@ -22,6 +21,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 users = {}
 
+active_locks = {}
 
 def save_users():
     users = {}
@@ -81,12 +81,11 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda msg: True)
 def echo_all(message):
-    global cur_lock
     if 'Настроить доступ к комнате' in message.text:
         room = message.text.split()[-1]
-        cur_lock = locks[room]
-        if get_user_access_by_tg(message.from_user.username, cur_lock.room_id):
-            lock_users = cur_lock.get_users()
+        active_locks[message.from_user.id] = locks[room]
+        if get_user_access_by_tg(message.from_user.username, active_locks[message.from_user.id].room_id):
+            lock_users = active_locks[message.from_user.id].get_users()
             uid = str(message.from_user.id)
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             if uid in list(lock_users.keys()):
@@ -106,25 +105,31 @@ def echo_all(message):
             sync_user_accesses(message.from_user)
             bot.send_message(message.chat.id, text="Ваш доступ к этой комнате истёк")
             bot.send_message(message.chat.id, text="Выберите функцию", reply_markup=get_menu_markup(message.from_user))
+            del active_locks[message.from_user.id]
     elif message.text == "Добавить отпечаток в базу замка":
-        if cur_lock.add_fingerprint(str(message.from_user.id)):
+        if active_locks[message.from_user.id].add_fingerprint(str(message.from_user.id)):
             bot.send_message(message.chat.id, text="Вы добавили отпечаток пальца",
                              reply_markup=get_menu_markup(message.from_user))
+            del active_locks[message.from_user.id]
     elif message.text == 'Добавить пропуск в базу замка':
-        if cur_lock.add_card(str(message.from_user.id)):
+        if active_locks[message.from_user.id].add_card(str(message.from_user.id)):
             bot.send_message(message.chat.id, text="Вы добавили карту",
                              reply_markup=get_menu_markup(message.from_user))
+            del active_locks[message.from_user.id]
     elif message.text == "Удалить отпечаток из базы замка":
-        cur_lock.delete_fingerprint(str(message.from_user.id))
+        active_locks[message.from_user.id].delete_fingerprint(str(message.from_user.id))
         bot.send_message(message.chat.id, text="Вы удалили отпечаток пальца",
                          reply_markup=get_menu_markup(message.from_user))
+        del active_locks[message.from_user.id]
     elif message.text == 'Удалить пропуск из базы замка':
-        cur_lock.delete_card(str(message.from_user.id))
+        active_locks[message.from_user.id].delete_card(str(message.from_user.id))
         bot.send_message(message.chat.id, text="Вы удалили карту",
                          reply_markup=get_menu_markup(message.from_user))
+        del active_locks[message.from_user.id]
     elif message.text == 'Назад':
         bot.send_message(message.chat.id, text="Вы вернулись в главное меню",
                          reply_markup=get_menu_markup(message.from_user))
+        del active_locks[message.from_user.id]
     elif message.text == "Синхронизировать доступы":
         sync_user_accesses(message.from_user)
         bot.send_message(message.chat.id, text="Ваши доступы синхронизированы",

@@ -1,7 +1,7 @@
 import tinytuya
 import time
 
-d = tinytuya.OutletDevice('bf45653c868eec068bawzu', '192.168.10.8', 'U_tn`Qb%*Rrm#/f_')
+d = tinytuya.OutletDevice('bfc2362c23fa6fe8a32qxv', '192.168.137.68', '?mcc<FabE]py;ViN')
 d.set_version(3.3)
 
 STATUS_TIMER = 30
